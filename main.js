@@ -6,8 +6,9 @@ var shoppingCart = [];
 let viewCart = document.querySelector('.cart');
 let allProducts = document.querySelector('.allProducts');
 const cartButton = document.querySelector('.fa-cart-shopping')
+let productList = document.querySelector('ol')
 
-
+cartButton.textContent = shoppingCart.length
 // dodawanie produktu #1
 tshirtButton.addEventListener('click', function () {
     shoppingCart.push('tshirt');
@@ -51,6 +52,7 @@ clearButton.addEventListener('click', function () {
     // console.log(shoppingCart.length, shoppingCart);
     viewCart.textContent = shoppingCart;
     allProducts.textContent = `Ilość Twoich produktów wynosi 0`
+    cartButton.textContent = shoppingCart.length
 });
 
 cartButton.addEventListener('click', function(){
