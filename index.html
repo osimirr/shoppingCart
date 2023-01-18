@@ -6,21 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <button class="tshirt">Kup koszulkę</button>
-    <button class="pants">Kup spodnie</button>
-    <button class="hoodie">Kup bluzę </button>
-    <button class="clear">Wyczyść koszyk</button>
-    <div>Oto Twój koszyk:</div>
-    <div class="cart">
+    <div class="product">
+        <img src="./img/tshirt.png" alt="">
+        <button class="tshirt buy">Kup koszulkę</button>
+    </div>
+    <div class="product">
+        <img src="./img/pants.jpg" alt="">
+        <button class="pants buy">Kup spodnie</button>
+    </div>
+    <div class="product">
+        <img src="./img/hoodie.jpg" alt="">
+        <button class="hoodie buy">Kup bluzę </button>
+    </div>
+
+    <div><i class="fa-solid fa-cart-shopping"></i></div>
+    
+    <div class="cart ">
+        <p> Oto Twój koszyk:</p>
         <ol>
         </ol>
+        <button class="clear">Wyczyść koszyk</button>
+        <div class="allProducts"></div>
     </div>
-    <div class="allProducts"></div>
+    
 
     <script src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/63c276db68.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
